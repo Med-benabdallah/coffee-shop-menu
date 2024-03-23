@@ -1,7 +1,9 @@
+import { Navbar } from '@/components/navbar/navbar'
+import { ScrollAreaBar } from '@/components/scroll-area/scroll-area'
 import React from 'react'
 
 export default  function Sweets() {
   return (
-    <div>Sweets</div>
+    <div><Navbar/><ScrollAreaBar/>Sweets</div>
   )
 }

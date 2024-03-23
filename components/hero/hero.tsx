@@ -13,6 +13,9 @@ import {
   animate,
 } from "framer-motion";
 import { BiFontFamily } from 'react-icons/bi';
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import logoBT from "@/public/blacktag-logo.jpg";
+
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 
@@ -41,11 +44,12 @@ export const Hero = () => {
     >
       <div className="relative z-10 flex flex-col items-center">
         
-        <h2 className="max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text text-center text-xl font-medium leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-7xl md:leading-tight">
-          WELCOME TO
-        </h2>
-        <h1 className="max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text text-center text-3xl font-medium leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-7xl md:leading-tight pb-2" style={{ fontFamily: 'Shantell Sans, sans-serif' }}>BLACKTAG</h1>
-        <Link href="/menu" >
+      <Avatar className='h-40 w-40 m-5'>
+          <AvatarImage src="https://scontent.ftun6-1.fna.fbcdn.net/v/t39.30808-1/326883462_542451481186745_981167221096928765_n.jpg?stp=dst-jpg_p320x320&_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=GoBbgPg6wQEAX-hxUOv&_nc_ht=scontent.ftun6-1.fna&oh=00_AfA74SHzQJNDWjlDc3X0Bx23Sd36cAY9kqUWt1my632kvA&oe=6602B093" />
+          <AvatarFallback>BT</AvatarFallback>
+      </Avatar>
+
+        <Link href="/drinks" >
         <motion.button
           style={{
             border,

@@ -1,8 +1,11 @@
+import { Navbar } from '@/components/navbar/navbar'
+import { ScrollAreaBar } from '@/components/scroll-area/scroll-area'
 import React from 'react'
 
 function page() {
   return (
-    <div>this is the food page</div>
+    
+    <div><Navbar/><ScrollAreaBar/>THIS IS THE FOOD PAGE</div>
   )
 }
 
